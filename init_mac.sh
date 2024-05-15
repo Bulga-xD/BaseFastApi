@@ -20,5 +20,5 @@ APP_HOME=$(cd "${APP_HOME:-./}" && pwd -P) || exit
 
 python -m venv --clear "$APP_HOME"/.venv
 source "$APP_HOME"/.venv/bin/activate
-python -m pip install --upgrade pip==23.2.1
-python -m pip install -e '.[test]' --extra-index-url https://nexus.gfk.com/repository/pypi_sqc_hosted/simple/
+python -m pip install --upgrade pip==24.0.0
+python -m pip install -e '.[test]'
